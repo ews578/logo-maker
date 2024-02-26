@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
+const {Triangle,Circle,Square} = require("./shapes")
 // Create an array of questions for user input
 
 const questions =[{
@@ -15,9 +15,23 @@ const questions =[{
     type: 'list',
     name: 'shape',
     message: 'Select a shape',
-    choice: ['circle','square','triangle']
+    choices: ['circle','square','triangle']
 },{
     type: 'input',
     name: 'shapeColor',
     message: 'Please enter a shape color'
 }]
+console.log(Triangle)
+inquirer.prompt(questions).then(res =>{
+    let svg;
+    if(res.shape==="triangle"){
+        svg = new Triangle (res.shapeColor,res.text,res.textColor)
+    }
+    if(res.shape==="circle"){
+        svg = new Circle (res.shapeColor,res.text,res.textColor)
+    }
+    if(res.shape==="square"){
+        svg = new Square (res.shapeColor,res.text,res.textColor)
+    }
+    fs.writeFileSync("./logo.svg",svg.render())
+})
