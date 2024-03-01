@@ -3,13 +3,13 @@
 The task is to build a Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
 
 
-User Story
+USER STORY
 
 AS a freelance web developer
 I WANT to generate a simple logo for my projects
 SO THAT I don't have to pay a graphic designer
 
-Acceptance Criteria
+ACCEPTANCE CRITERIA
 
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for text
@@ -32,7 +32,8 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
-Contributions
+CONTRIBUTIONS
+
 I would like to thank the assistance of the teachers aides, tutors, the resources throughout the bootcamp this week and google for aiding me in this project.
 
 Links
