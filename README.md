@@ -4,11 +4,13 @@ The task is to build a Node.js command-line application that takes in user input
 
 
 User Story
+
 AS a freelance web developer
 I WANT to generate a simple logo for my projects
 SO THAT I don't have to pay a graphic designer
 
 Acceptance Criteria
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for text
 THEN I can enter up to three characters
@@ -31,4 +33,6 @@ Links
 Attached below are the video submission of the application in live use and my git hub repo.
 
 https://drive.google.com/file/d/1JzPBlp42NE-lsauTJzuvhlxyi0gUuXOg/view
+
+
 https://ews578.github.io/logo-maker/
